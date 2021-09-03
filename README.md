@@ -25,5 +25,5 @@ data("btwkandidaten2021")
 ## Quelle
 
 Bundeswahlleiter: 
-* Kandidierende: https://www.bundeswahlleiter.de/bundestagswahlen/2021/wahlbewerber/bund-99/{letter}.html
+* Kandidierende: https://www.bundeswahlleiter.de/bundestagswahlen/2021/wahlbewerber/bund-99/a.html
 * Parteien: https://www.bundeswahlleiter.de/info/presse/mitteilungen/bundestagswahl-2021/23_21_parteien-wahlteilnahme.html
