@@ -32,14 +32,14 @@ transpose(candidate_lists) %>%
   compact()
 
 # Cleaning and transformations
-candidates <- transpose(candidate_lists) %>% pluck("result") %>%
+btwkandidaten2021 <- transpose(candidate_lists) %>% pluck("result") %>%
   compact() %>%
   bind_rows(.id = "buchstabe") %>%
   rename(name = 2, geburtsjahr = 3, partei = 4, kandidiert = 5) %>%
   mutate(buchstabe = str_to_upper(buchstabe)) %>%
   separate(name, into = c("nachname", "vorname"), sep = ", ", remove = FALSE) %>%
   # Split kandidiert into direkt and liste
-  separate(kandidiert, into = c("item1", "item2"), sep = "\\n\\s+und\\s", remove = FALSE) %>%
+  separate(kandidiert, into = c("item1", "item2"), sep = "\\n\\s+und\\s", remove = FALSE, fill = "right") %>%
   mutate(wahlkreis = ifelse(str_detect(item1, "Wahlkreis"), item1, NA),
          wahlkreis = str_remove(wahlkreis, "Wahlkreis "),
          liste = case_when(
@@ -54,28 +54,4 @@ candidates <- transpose(candidate_lists) %>% pluck("result") %>%
   select(buchstabe:partei, parteiname, everything(), -c(item1, item2, kandidiert))
 
 
-## CHECKS =======================
-
-test_that("Maximum Wahlkreis = 299",
-          expect_equal(max(candidates$wahlkreis, na.rm = TRUE), "299"))
-
-test_that("If liste is missing, listenplatz must be missing, too",
-          expect_equal(filter(candidates, is.na(liste)) %>%
-                         count(listenplatz) %>%
-                         pull(listenplatz),
-                       NA_real_))
-
-test_that("If listenplatz is missing, liste must be missing, too",
-          expect_equal(filter(candidates, is.na(listenplatz)) %>%
-                         count(liste) %>%
-                         pull(liste),
-                       NA_character_))
-
-test_that("If wahlkreis is missing, listenplatz must NOT be missing",
-          expect_equal(filter(candidates, is.na(wahlkreis)) %>%
-                         count(listenplatz) %>%
-                         filter(is.na(listenplatz)) %>% nrow(),
-                       0))
-
-
-use_data(candidates)
+use_data(btwkandidaten2021, overwrite = TRUE)

@@ -2,24 +2,22 @@
 # btwkandidaten2021
 
 <!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-The goal of btwkandidaten2021 is to ...
+Aufbereiteter Datensatz der Direkt- und Listenkandidat:innen zur Bundestagswahl 2021 für die Verwendung in R.
 
 ## Installation
 
-You can install the released version of btwkandidaten2021 from [CRAN](https://CRAN.R-project.org) with:
+Das Package kann via [Github](https://www.github.com/bydata) installiert werden:
 
 ``` r
-install.packages("btwkandidaten2021")
+devtools::install_github("bydata/btwkandidaten2021")
 ```
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
+## Laden der Daten
 
 ``` r
 library(btwkandidaten2021)
-## basic example code
+data("btwkandidaten2021")
 ```
-
