@@ -5,7 +5,7 @@
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-Aufbereiteter Datensatz der Direkt- und Listenkandidat:innen zur Bundestagswahl 2021 für die Verwendung in R.
+Aufbereiteter Datensatz der Wahlbewerber:innen (Direkt- und Listenkandidat:innen) zur Bundestagswahl 2021 für die Verwendung in R.
 
 ## Installation
 

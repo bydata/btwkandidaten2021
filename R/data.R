@@ -1,6 +1,6 @@
 #' Direkt- und Listenkandidat:innen zur Bundestagswahl 2021
 #'
-#' Alle Kandidierenden in alphabetischer Reihenfolge.
+#' Alle Wahlbewerber:innen in alphabetischer Reihenfolge.
 #' Quelle: Bundeswahlleiter (Stand: 03.09.2021)
 #'
 #' @format A tibble / data frame with 6211 rows and 10 variables:
