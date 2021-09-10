@@ -1,5 +1,5 @@
 
-# btwkandidaten2021
+# btwkandidierende2021 - Kandidierende zur Bundestagswahl 2021
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
@@ -12,13 +12,13 @@ Aufbereiteter Datensatz der Wahlbewerber:innen (Direkt- und Listenkandidat:innen
 Das Package kann via [Github](https://www.github.com/bydata) installiert werden:
 
 ``` r
-devtools::install_github("bydata/btwkandidaten2021")
+devtools::install_github("bydata/btwkandidierende2021")
 ```
 
 ## Laden der Daten
 
 ``` r
-library(btwkandidaten2021)
+library(btwkandidierende2021)
 data("btwkandidierende2021")
 ```
 
