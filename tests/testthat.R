@@ -1,4 +1,4 @@
 library(testthat)
-library(btwkandidaten2021)
+library(btwkandidierende2021)
 
-test_check("btwkandidaten2021")
+test_check("btwkandidierende2021")

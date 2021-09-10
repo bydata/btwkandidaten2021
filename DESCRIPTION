@@ -1,4 +1,4 @@
-Package: btwkandidaten2021
+Package: btwkandidierende2021
 Title: Aufbereiteter Datensatz der Direkt- und Listenkandidat:innen zur Bundestagswahl 2021
 Version: 0.0.1
 Authors@R: 
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "ansgar.wolsing@gmail.com")
 Description: Aufbereiteter Datensatz der Direkt- und Listenkandidat:innen zur Bundestagswahl 2021.
-  Quelle: Bundeswahlleiter (Stand 03.09.2021).
+  Quelle: Bundeswahlleiter (Stand 10.09.2021).
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
