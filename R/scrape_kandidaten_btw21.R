@@ -32,7 +32,7 @@ transpose(candidate_lists) %>%
   compact()
 
 # Cleaning and transformations
-btwkandidaten2021 <- transpose(candidate_lists) %>% pluck("result") %>%
+btwkandidierende2021 <- transpose(candidate_lists) %>% pluck("result") %>%
   compact() %>%
   bind_rows(.id = "buchstabe") %>%
   rename(name = 2, geburtsjahr = 3, partei = 4, kandidiert = 5) %>%
@@ -54,4 +54,4 @@ btwkandidaten2021 <- transpose(candidate_lists) %>% pluck("result") %>%
   select(buchstabe:partei, parteiname, everything(), -c(item1, item2, kandidiert))
 
 
-use_data(btwkandidaten2021, overwrite = TRUE)
+use_data(btwkandidierende2021, overwrite = TRUE)

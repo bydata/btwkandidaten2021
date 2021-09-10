@@ -19,4 +19,4 @@
 #'   \item{listenplatz}{Listenplatz, NA wenn ausschließlich direkt kandidiert}
 #' }
 #' @source \url{https://www.bundeswahlleiter.de/}
-"btwkandidaten2021"
+"btwkandidierende2021"

@@ -19,7 +19,7 @@ devtools::install_github("bydata/btwkandidaten2021")
 
 ``` r
 library(btwkandidaten2021)
-data("btwkandidaten2021")
+data("btwkandidierende2021")
 ```
 
 ## Quelle
